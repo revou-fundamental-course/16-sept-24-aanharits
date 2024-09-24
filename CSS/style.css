@@ -1,1 +1,277 @@
-/* ini css
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@media only screen and (max-width: 600px) { 
+    .navbar {
+        flex-direction: column;
+    }
+    .contact-header {
+        font-size: smaller;
+    }
+}
+
+header {
+    color: white;
+    text-shadow: 3px 3px 3px #333;
+    font-family: 'Pacifio', monospace;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #008080;
+}
+
+svg {
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    padding: 3px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 17px;
+    gap: 1.8rem;
+}
+
+
+.buttonMain {
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px #333; 
+    font-size: medium;
+}
+
+.buttonMain:hover {
+    color: #004d40;
+    transition: background-color 0.6s;
+}
+
+.buttonContact {
+    background-color: #c0c0c0;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: -10px;
+    border: 2px solid black;
+}
+
+.buttonContact:hover {
+    background-color: #004d40;
+    color: #c0c0c0;
+    transition: background-color 0.5s;
+}
+
+.greetings {
+    font-size: large;
+    padding-top: 9%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-shadow: 2px 2px 3px #333; 
+}
+
+.buttonHit {
+    background-color: #c0c0c0;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+.buttonHit:hover {
+    background-color: #004d40;
+    color: #c0c0c0;
+    transition: background-color 0.5s;
+}
+
+#target-section-our-profile {
+    background-color: #c0c0c0;
+    padding-bottom: 20px;
+}
+
+.bio-container {
+    text-align: center;
+    padding: 80px;
+}
+
+.bio-header {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Pacifio', monospace;
+    color: #008080;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.bio-info {
+    color: #333;
+}
+
+.profile { 
+    box-shadow: 0 4px 30px black;
+    width: 220px;
+    border-radius: 50%;
+    border: 4px solid #008080;
+    margin-top: -30px;
+}
+
+.buttonProject {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Pacifio', monospace;
+}
+
+.buttonProject:hover {
+    background-color: #008080;
+    transition: background-color 0.5s;
+    color: #c0c0c0;
+}
+
+.buttonContact2 {
+    text-decoration: none;
+    color: #008080;
+    font-weight: bold;
+    transition: background-color 0.6s;
+    margin-left: 15px;
+    font-size: medium;
+    font-family: 'Pacifio', monospace;
+    cursor: pointer;
+}
+
+.buttonContact2:hover {
+    color: #333;
+    transition: background-color 0.5s;
+}
+
+#target-section-project {
+    background-color: #c0c0c0;
+    height: 570px;
+    text-align: center;
+}
+
+.project-header {
+    color: #008080;
+    text-shadow: 1px 1px 2px #333;
+    font-family: 'Pacifio', monospace;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.project-img {
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+button {  /* button untuk di section project */
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -10px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+button:hover {  /* button untuk di section project */
+    background-color: #008080;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.img-slideshow {
+    width: 60%;
+    display: block;
+    box-shadow: 0 4px 30px black;
+    border-radius: 20px;
+    border: 4px solid #333;
+}
+
+#target-section-contact {
+    margin-top: 220px;
+}
+
+.contact-header {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px #333;
+    font-family: 'Pacifio', monospace;
+    margin-top: -100px;
+    padding-bottom: 7px;
+}
+
+.form-group {
+    filter: brightness(60%);
+    margin: 30px;
+    text-align: center;
+}
+
+.form-group:hover {
+    filter: brightness(100%);
+    transition: 0.5s ease;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 40%;
+    padding: 9px 10px;
+    border-radius: 12px;
+    border: 3px solid #09342f;
+}
+
+.buttonSubmit{
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 3px solid black;
+}
+
+.buttonSubmit:hover {
+    background-color: #004d40;
+    color: #c0c0c0;
+    transition: 0.2s ease;
+}
+
+footer {
+    text-shadow: 3px 3px 3px #333;
+    font-size: small;
+    background-color: #333;
+    color: #c0c0c0;
+    text-align: center;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
