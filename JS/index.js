@@ -39,15 +39,15 @@ function showDivs(n) {
 
 
 // validate form
-document.getElementById('contactForm').onsubmit = function (event) {
-  event.preventDefault();
+function submitForm () {
+document.getElementById('contactForm'); {
 
-  var name = document.getElementById('nama').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+var name = document.getElementById('nama').value;
+var email = document.getElementById('email').value;
+var message = document.getElementById('message').value;
 
-  if (name || email || message) {
-    alert(`Thank you for your message, here are your submitted details :\nName : ${name}\nEmail : ${email}\nMessage:  ${message}`);
+    if (name || email || message) {
+      alert(`Thank you for your message, here are your submitted details :\nName : ${name}\nEmail : ${email}\nMessage:  ${message}`);
+    }
   }
-  this.submit();
-}; 
+}
