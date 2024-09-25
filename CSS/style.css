@@ -41,21 +41,11 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    body, html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-
 header {   /*bagian header atau bagian page paling awal*/
     color: white;
     text-shadow: 3px 3px 3px #333;
     font-family: 'Pacifio', monospace;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     margin-left: 20px;
     padding: 10px;
@@ -63,7 +53,6 @@ header {   /*bagian header atau bagian page paling awal*/
 
 body, html {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
     background-color: #008080;
     width: 100%;
     height: 100%;
@@ -127,7 +116,7 @@ body::-webkit-scrollbar {
 }
 
 .greetings {
-    font-size: large;
+    font-size: medium;
     padding-top: 9%;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -162,7 +151,7 @@ body::-webkit-scrollbar {
 }
 
 .bio-header {
-    font-size: 27px;
+    font-size: 24px;
     font-weight: bolder;
     font-family: 'Pacifio', monospace;
     color: #008080;
