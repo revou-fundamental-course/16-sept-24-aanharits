@@ -14,6 +14,9 @@ function buttonAbout() {
 function buttonProject() {
   document.getElementById("target-section-project").scrollIntoView({ behavior: "smooth" });
 } // button project
+function buttonSkills() {
+  document.getElementById("target-section-skills").scrollIntoView({ behavior: "smooth"});
+}
 function buttonContact() {
   document.getElementById("target-section-contact").scrollIntoView({ behavior: "smooth" });
 } // button contact
