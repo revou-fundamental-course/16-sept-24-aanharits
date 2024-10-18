@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
+    <meta name="viewport" conten
+    
+    t="width=device-width, initial-scale=1.0, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>My Portofolio</title>
 </head>
 <body>
@@ -31,12 +34,12 @@
 
 <!--page section about me-->
     <section id="target-section-about">
-        <div class="bio-container">
+        <div data-aos="fade-up" class="bio-container">
             <img src="assets/ProfilePhoto.png" class="profilePhoto"> 
             <article class="bio-header">
-                <h2>Hi, Im Farhan Harits Prakoso.</h2>
+                <h2 data-aos="fade-up">Hi, Im Farhan Harits Prakoso.</h2>
             </article>
-            <article class="bio-info">
+            <article data-aos="fade-up" class="bio-info">
                 <p>Im a Student of Computer Science at Gunadarma University. In my spare time I like to listening a Music, Gaming, Hangout and building my own Projects. My preferred tools are HTML, CSS.</p>
                 <button class="buttonProject" type="submit">Check Out My CV</button></a>
                 <a class="buttonContact2" onclick="buttonContact()">Contact Me</a>
@@ -48,10 +51,10 @@
 
 <!--page section project-->
     <section id="target-section-project">
-        <article class="project-header">
+        <article data-aos="fade-up" class="project-header">
             <h2>My Mini Projects</h2>
         </article>
-        <div class="project-img">
+        <div data-aos="fade-up" class="project-img">
             <img class="img-slideshow" src="assets/project1.PNG">
             <img class="img-slideshow" src="assets/project2.PNG">
             <img class="img-slideshow" src="assets/project3.PNG">
@@ -67,18 +70,18 @@
 <!--page section about me-->
     <section id="target-section-skills">
         <article class="Skill-header">
-            <h2>━━━ Skills ━━━</h2>
+            <h2 data-aos="fade-right">━━━ Skills ━━━</h2>
         </article>
         <div class="skills-container">
-            <div class="Skills">
+            <div data-aos="flip-down" class="Skills">
                 <img src="assets/html.png" alt="HTML5">
                     <span>HTML</span>
             </div>
-            <div class="Skills">
+            <div data-aos="flip-down" class="Skills">
                 <img src="assets/css.png" alt="CSS3">
                     <span>CSS</span>
             </div>
-            <div class="Skills">
+            <div data-aos="flip-down" class="Skills">
                 <img src="assets/js.png" alt="JavaScript">
                     <span>JavaScript</span>
             </div>
@@ -88,12 +91,12 @@
 
 <!--page section contact-->
     <section id="target-section-contact" class="contact-section">
-    <article class="contact-header">
+    <article data-aos="fade-down" class="contact-header">
         <h2>Contact Me</h2>
         <p>Feel free to touch with me whenever you need assistance or want to discuss anything.</p>
         <p>Im here to help you with pleasure!</p>
     </article>
-    <form onsubmit="return false" id="contactForm" action="#" method="post">
+    <form onsubmit="return false" id="contactForm" action="#" method="post" data-aos="fade-down">
         <div class="form-group">
             <input label="name" type="text" id="nama" placeholder="Your Name" name="name" required>
         </div>
@@ -118,5 +121,9 @@
     </footer>
 
     <script src="JS/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
